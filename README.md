@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kennycyb/java-ui-spring-rest-api-mongodb.svg?branch=master)](https://travis-ci.org/kennycyb/spring-rest-api-mongodb)
+[![Build Status](https://travis-ci.org/kennycyb/spring-rest-api-mongodb.svg?branch=master)](https://travis-ci.org/kennycyb/spring-rest-api-mongodb)
 
 # spring-rest-api-mongodb
 Starter application for REST API with spring framework and mongodb.  This 
