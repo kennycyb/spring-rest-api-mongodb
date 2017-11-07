@@ -63,3 +63,25 @@ Dependencies
 	      port: 27017
 	      database: spring-rest-api
 	      
+# Externalize configuration (via Environment)
+
+	spring:
+	  data:
+	    mongodb:
+	      host: ${SPRING_MONGO_HOST}
+	      port: ${SPRING_MONGO_PORT}
+	      database: spring-rest-api
+	      
+## Using tomcat standalone
+
+Edit /usr/share/tomcat8/bin/setenv.sh, add "SPRING\_MONGO\_HOST" and "SPRING\_MONGO\_PORT", example: 
+
+	export CATALINA_OPTS=" \
+	...
+	...
+  		-DSPRING_MONGO_HOST=localhost \
+  		-DSPRING_MONGO_PORT=27017
+  	"
+
+## Deploy to OpenShift
+
