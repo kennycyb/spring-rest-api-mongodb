@@ -85,3 +85,14 @@ Edit /usr/share/tomcat8/bin/setenv.sh, add "SPRING\_MONGO\_HOST" and "SPRING\_MO
 
 ## Deploy to OpenShift
 
+### Deployment Environment Variables
+
+| Key                     | Value     | Description                        |
+| ----------------------- + --------- + ---------------------------------- |
+| SPRING_PROFILES         | openshift | Load the application-openshift.yml |
+| SPRING\_MONGO\_HOST     | hostname  |                                    |
+| SPRING\_MONGO\_PORT     | port      |                                    |
+| SPRING\_MONGO\_USER     | user      |                                    |
+| SPRING\_MONGO\_PASSWORD | password  |                                    |
+| SPRING\_MONGO\_DATABASE | database  |                                    |
+

@@ -4,5 +4,3 @@ spring:
       host: localhost
       port: 27017
       database: spring-rest-api
-      username: 
-      password: 
