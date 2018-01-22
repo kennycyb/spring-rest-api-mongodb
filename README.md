@@ -1,8 +1,8 @@
 [![Build Status](https://travis-ci.org/kennycyb/spring-rest-api-mongodb.svg?branch=master)](https://travis-ci.org/kennycyb/spring-rest-api-mongodb)
 
 # spring-rest-api-mongodb
-Starter application for REST API with spring framework and mongodb.  This 
-project is based on the https://github.com/kennycyb/spring-rest-api-starter, 
+Starter application for REST API with spring framework and mongodb.  This
+project is based on the https://github.com/kennycyb/spring-rest-api-starter,
 with added connectivity to MongoDB.
 
 Refer to https://docs.spring.io/spring-boot/docs/current/reference/html/ for more information.
@@ -20,7 +20,7 @@ Use Spring Framwork
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
     </parent>
-    
+
 Dependencies
 
 	<dependencies>
@@ -52,7 +52,7 @@ Dependencies
             <artifactId>spring-boot-starter-data-mongodb</artifactId>
         </dependency>		
     </dependencies>
-    
+
 
 # Configuration: src/main/resources/application.yml
 
@@ -62,7 +62,7 @@ Dependencies
 	      host: localhost
 	      port: 27017
 	      database: spring-rest-api
-	      
+
 # Externalize configuration (via Environment)
 
 	spring:
@@ -71,10 +71,10 @@ Dependencies
 	      host: ${SPRING_MONGO_HOST}
 	      port: ${SPRING_MONGO_PORT}
 	      database: spring-rest-api
-	      
+
 ## Using tomcat standalone
 
-Edit /usr/share/tomcat8/bin/setenv.sh, add "SPRING\_MONGO\_HOST" and "SPRING\_MONGO\_PORT", example: 
+Edit /usr/share/tomcat8/bin/setenv.sh, add "SPRING\_MONGO\_HOST" and "SPRING\_MONGO\_PORT", example:
 
 	export CATALINA_OPTS=" \
 	...
@@ -88,11 +88,10 @@ Edit /usr/share/tomcat8/bin/setenv.sh, add "SPRING\_MONGO\_HOST" and "SPRING\_MO
 ### Deployment Environment Variables
 
 | Key                     | Value     | Description                        |
-| ----------------------- + --------- + ---------------------------------- |
+| ----------------------- | --------- | ---------------------------------- |
 | SPRING_PROFILES         | openshift | Load the application-openshift.yml |
 | SPRING\_MONGO\_HOST     | hostname  |                                    |
 | SPRING\_MONGO\_PORT     | port      |                                    |
 | SPRING\_MONGO\_USER     | user      |                                    |
 | SPRING\_MONGO\_PASSWORD | password  |                                    |
 | SPRING\_MONGO\_DATABASE | database  |                                    |
-
